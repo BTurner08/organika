@@ -1,3 +1,7 @@
+.navbar {
+    background-color:#1F363D;
+}
 .navbar h1 {
-    color: red;
+    color: white;
+    text-align: center;
 }

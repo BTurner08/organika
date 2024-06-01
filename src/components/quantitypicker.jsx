@@ -10,15 +10,18 @@ function increase() {
 }
 
 function decrease() {
+    if(quantity == 1) return;
     let value = quantity - 1
     setQuantity(value)
 }
 
+
+
     return (
         <div className="qt-picker">
-            <button onClick={decrease}>-</button>
+            <button className="btn btn-sm btn-outline-info" onClick={decrease}>-</button>
             <label>{quantity}</label>
-            <button onClick={increase}>+</button>
+            <button className="btn btn-sm btn-outline-info" onClick={increase}>+</button>
         </div>
     );
 }

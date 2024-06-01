@@ -1,9 +1,7 @@
-.qt-picker {
-    border: 1px solid;
-    padding: 10px;
+.qt-picker button {
+    margin: 5px;
 }
 
-.qt-picker button {
-    font-weight: bold;
-    margin: 0 5px;
+.qt-picker .add-btn {
+    color: black;
 }

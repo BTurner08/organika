@@ -1,0 +1,12 @@
+.about {
+    background-color: #1F363D;
+    min-height: 600px;
+}
+
+.about .info {
+    background-color: aliceblue;
+    border: 1px solid black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}

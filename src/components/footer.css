@@ -1,9 +1,6 @@
 .footer {
-    background-color: #606366;
-}
-
-.footer h1 {
+    background-color: #1F363D;
+    padding: 10px;
     color: white;
-    margin: 0;
-    font-size: 18px;
+    text-align: center;
 }
