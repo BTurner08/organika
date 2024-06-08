@@ -1,11 +1,16 @@
 //the imports goes here
+import { useContext } from "react";
 import "./navbar.css";
 
 import { Link } from "react-router-dom";
+import DataContext from "../context/dataContext";
 //the logic goes here
 
-function Navbar()
-{
+function Navbar() {
+
+const user= useContext(DataContext).user;
+
+
     return(
         <nav className="navbar navbar-expand-lg " data-bs-theme="dark">
         <div className="container-fluid">
@@ -49,14 +54,15 @@ function Navbar()
                 </Link>
               </li>
 
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/shoppingList">
+                  Shopping List
+                </Link>
+              </li>
+
             </ul>
             <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <label className="btn btn-outline-dark">{user.name}</label>
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
