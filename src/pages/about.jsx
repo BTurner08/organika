@@ -13,7 +13,7 @@ function About(){
         return(
         <div className="info">
                 <p>My email: <b>Mrbturner2013@yahoo.com</b></p>
-                <p>My phone: <b>(614)537-1370</b> </p>
+                <p>My phone: <b>(614)123-4567</b> </p>
             </div>
         );
     }

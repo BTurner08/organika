@@ -1,7 +1,10 @@
 .navbar {
-    background-color:#1F363D;
+    background-color:#2B2D42;
 }
 .navbar h1 {
     color: white;
     text-align: center;
+}
+.navbar .user{
+    margin-right: 10px;
 }

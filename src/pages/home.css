@@ -1,7 +1,83 @@
 .home {
-    background-color: #E2DFF2;
+    background-color: #F8F7F9;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.home .banner .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background-color: #F8F7F9;
+    padding: 20px;
+    max-width: 400px; /* Adjust the width as needed */
+    width: 350px;
+    color: black;
+    text-align: center;
 }
 
 .home img{
     width: 100%;
+    height: 700px;
+    margin: auto;
+}
+.home-grid{
+    grid-template-columns: repeat(4,minmax(0, 1fr));
+    grid-gap: 10px;
+    display: grid;
+    height: 250px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.grid {
+    background-color: #2B2D42;
+    position: relative;
+}
+
+.grid img{
+    height: 250px;
+}
+.text-overlay {
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    transform: translate(-50%, -50%);
+    color: #F8F7F9;
+    text-align: left;
+    padding-left: 200px;
+    
+}
+
+.text-overlay a:hover {
+    color: #2B2D42; /* Change the background color on hover */
+}
+
+.text-overlay a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+.home .banner .text-overlay h4 {
+    color: green;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 5%;
+}
+
+.video-info {
+    margin-top: 40px;
 }
