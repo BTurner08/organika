@@ -1,13 +1,18 @@
+import { useEffect, useState } from "react";
 import "./catalog.css"
 import Proudct from "../components/product";
 import { Button } from "bootstrap";
+import axios from "axios";
+
 
 
 function Catalog() {
+    const [products, setProducts] = useState([]);
+    const [categories, setCategories] = useState([]);
 
-    let categories = ["Fruit","Merchandise","Dairy"]
+    let old_categories = ["Fruit","Merchandise","Dairy"]
 
-    let products = [
+    let old_products = [
         {
             title: "Orange",
             category: "Fruit",
@@ -59,6 +64,16 @@ function Catalog() {
         },
     ];
     
+    async function loadData() {
+        let res = await axios.get("http://127.0.0.1:5000/api/products");
+        setProducts(res.data);
+    };
+
+    useEffect(function() {
+        loadData();
+
+    }, []);
+
     return(
         <div className="catalog">
         <h2>Check out our catalog!</h2>
